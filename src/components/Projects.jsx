@@ -17,7 +17,7 @@ const Projects = () => {
     ];
 
     return (
-        <section>
+        <section id="projects">
             <h2 style={{ fontSize: '2rem', marginBottom: '2rem' }}>Featured Projects</h2>
             <div style={{
                 display: 'grid',

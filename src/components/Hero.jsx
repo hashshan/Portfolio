@@ -19,7 +19,7 @@ const Hero = () => {
                 marginBottom: '2rem'
             }}>
                 <img
-                    src="/profile-pic.png"
+                    src="/profile-pic.jpg"
                     alt="Shantanu Kumar Pandey"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
@@ -77,6 +77,7 @@ const Hero = () => {
                     fontSize: '1rem',
                     transition: 'transform 0.2s'
                 }}
+                    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 >
@@ -92,6 +93,7 @@ const Hero = () => {
                     fontSize: '1rem',
                     transition: 'transform 0.2s, background 0.2s'
                 }}
+                    onClick={() => window.location.href = 'mailto:shantanu22040@gmail.com'}
                     onMouseEnter={(e) => {
                         e.target.style.transform = 'scale(1.05)';
                         e.target.style.background = 'var(--glass-bg)';
